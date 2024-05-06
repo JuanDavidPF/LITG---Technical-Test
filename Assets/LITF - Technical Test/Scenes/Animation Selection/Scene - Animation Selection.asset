@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 263fba34589a0d04c93534a866c51d17, type: 3}
-  m_Name: VAR_Anim_SelectedAnimation
+  m_Script: {fileID: 11500000, guid: 8d15a807ae8a2744398eb7aad7546245, type: 3}
+  m_Name: Scene - Animation Selection
   m_EditorClassIdentifier: 
-  m_value: {fileID: -203655887218126122, guid: c6ee716a0d5a5a447a4d3b50c4669a89, type: 3}
+  m_value: Animation Selection
   DeveloperDescription: 

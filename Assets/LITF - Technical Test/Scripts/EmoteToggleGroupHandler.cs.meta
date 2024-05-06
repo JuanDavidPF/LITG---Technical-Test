@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4f8b75182b076fe4bb81292f79a26095
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - emoteTogglePrefab: {fileID: 4750193666181132510, guid: b738c894dd9d95b4c83ed020ca7681e5, type: 3}
+  - selectedEmoteVariable: {fileID: 11400000, guid: dea4fd72ccc1d4941ba483bf364013b6, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,12 +9,14 @@ namespace Payosky.ScriptableObjectsArchitecture
         [SerializeField] private TVar reference;
         [SerializeField] private bool preInvoke;
         [SerializeField] private UnityEvent<TValue> processes;
-
-        private void OnEnable()
+        private void Start()
         {
             if (!reference) return;
             if (preInvoke) ExecuteProcesses(reference.Value);
-
+        }//Closes Start method
+        private void OnEnable()
+        {
+            if (!reference) return;
             reference.OnValueChanged += ExecuteProcesses;
 
         }//Closes OnEnable method
