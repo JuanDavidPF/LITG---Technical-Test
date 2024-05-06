@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0feec86521abcde4881304ec245929bb, type: 3}
   m_Name: V-AOC-Selected Emote
   m_EditorClassIdentifier: 
-  m_value: {fileID: 22100000, guid: 7d1cff1eb411c4d49a51c819659219bc, type: 2}
+  m_value: {fileID: 22100000, guid: fa30a6d766d920847928c17829f93765, type: 2}
   DeveloperDescription: 
