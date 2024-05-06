@@ -1,0 +1,16 @@
+{
+    "name": "Payosky.TechnicalTests.LifeIsTheGame.Core",
+    "rootNamespace": "Payosky.TechnicalTests.LifeIsTheGame",
+    "references": [
+        "Payosky.ScriptableObjectsArchitecture.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
