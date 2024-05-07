@@ -1,8 +1,12 @@
 {
-    "name": "Payosky.ScriptableObjectsArchitecture.Core",
+    "name": "ScriptableObjectsArchitecture.Editor",
     "rootNamespace": "Payosky.ScriptableObjectsArchitecture",
-    "references": [],
-    "includePlatforms": [],
+    "references": [
+        "GUID:150cda888515ca3489f3ac878ce917f9"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
