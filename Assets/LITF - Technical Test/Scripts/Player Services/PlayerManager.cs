@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Payosky.TechnicalTests.LifeIsTheGame
 {
@@ -21,6 +22,16 @@ namespace Payosky.TechnicalTests.LifeIsTheGame
 
         [SerializeField] public KeyCode emoteKey = KeyCode.F;
         #endregion
+
+
+        #region Events
+        [Space(10)]
+        [Header("Events")]
+
+        [SerializeField] public UnityEvent OnReset;
+        [SerializeField] public UnityEvent OnGoBack;
+        #endregion
+
 
 
         #region Managers
@@ -49,6 +60,10 @@ namespace Payosky.TechnicalTests.LifeIsTheGame
         private void Update()
         {
             playerAnimationService.Update();
+
+            if (Input.GetKeyDown(KeyCode.R)) OnReset?.Invoke();
+            else if (Input.GetKeyDown(KeyCode.Escape)) OnGoBack?.Invoke();
+
 
         }//Closes Update method
 
