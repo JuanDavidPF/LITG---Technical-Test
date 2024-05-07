@@ -12,7 +12,7 @@ namespace Payosky.TechnicalTests.LifeIsTheGame
             bullet.Rigidbody.velocity = Vector3.zero;
             bullet.transform.SetPositionAndRotation(nozzleTransform.position, nozzleTransform.rotation);
             bullet.gameObject.SetActive(true);
-            bullet.Rigidbody.AddForce((nozzleTransform.forward + (Vector3.up / 4)) * data.firePower, ForceMode.Impulse);
+            bullet.Rigidbody.AddForce((nozzleTransform.forward + (Vector3.up / 3)) * data.firePower, ForceMode.Impulse);
 
         }//CLoses LaunchProjectile ethod
 

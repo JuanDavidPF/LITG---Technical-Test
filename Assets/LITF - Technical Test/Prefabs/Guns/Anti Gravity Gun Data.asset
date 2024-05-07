@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb1219bbd40c8441a8191604dd6dbf6, type: 3}
   m_Name: Anti Gravity Gun Data
   m_EditorClassIdentifier: 
-  firePower: 1000
+  firePower: 5
   crossair: {fileID: 0}
   firemode: 0
-  cooldown: 0.5
+  cooldown: 0.1
   magazineSize: 24
-  bullet: {fileID: 0}
+  bullet: {fileID: 976374016666186904, guid: 9f7ce302ea8d75f49989b549db43cd70, type: 3}
