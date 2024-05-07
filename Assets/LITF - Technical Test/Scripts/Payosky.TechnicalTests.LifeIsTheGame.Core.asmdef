@@ -2,7 +2,9 @@
     "name": "Payosky.TechnicalTests.LifeIsTheGame.Core",
     "rootNamespace": "Payosky.TechnicalTests.LifeIsTheGame",
     "references": [
-        "Payosky.ScriptableObjectsArchitecture.Core"
+        "Payosky.ScriptableObjectsArchitecture.Core",
+        "Payosky.Utilities.Core",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
