@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb1219bbd40c8441a8191604dd6dbf6, type: 3}
   m_Name: Black Hole Gun Data
   m_EditorClassIdentifier: 
-  firePower: 1000
+  firePower: 30
   crossair: {fileID: 0}
   firemode: 1
-  cooldown: 0.5
-  magazineSize: 24
-  bullet: {fileID: 0}
+  cooldown: 3
+  magazineSize: 3
+  bullet: {fileID: 7012715801333584985, guid: 7db9e4217f856cf4888969ba31bd3ffc, type: 3}

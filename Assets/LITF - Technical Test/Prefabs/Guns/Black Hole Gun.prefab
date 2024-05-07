@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2075728320162702443}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.013, y: 0.37, z: 1.446}
+  m_LocalPosition: {x: -0.013, y: 0.37, z: 2.78}
   m_LocalScale: {x: 2.4390244, y: 2.4390244, z: 2.4390244}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5052,11 +5052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1af757bcf60eb74a8ccfdf40bac6bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nozzleTransform: {fileID: 1893438935836110537}
   data: {fileID: 11400000, guid: 68d56fbaccc7fd54383bb03a71b82ee3, type: 2}
-  interactableText: Grab Black Hole Gun
-  interactableKey: 101
-  minDistancePickUp: 2.5
+  nozzleTransform: {fileID: 1893438935836110537}
   OnShoot:
     m_PersistentCalls:
       m_Calls:
@@ -5072,3 +5069,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  interactableText: Grab Black Hole Gun
+  interactableKey: 101
+  minDistancePickUp: 2.5
