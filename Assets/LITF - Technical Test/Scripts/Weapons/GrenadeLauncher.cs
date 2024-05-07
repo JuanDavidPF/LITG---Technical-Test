@@ -6,15 +6,15 @@ namespace Payosky.TechnicalTests.LifeIsTheGame
 {
     public class GrenadeLauncher : Weapon
     {
-        protected override bool Shoot()
+        protected override void LaunchProjectile(Projectile bullet)
         {
-            if (!base.Shoot()) return false;
+            if (!bullet) return;
+            bullet.Rigidbody.velocity = Vector3.zero;
+            bullet.transform.SetPositionAndRotation(nozzleTransform.position, nozzleTransform.rotation);
+            bullet.gameObject.SetActive(true);
+            bullet.Rigidbody.AddForce((nozzleTransform.forward + (Vector3.up / 4)) * data.firePower, ForceMode.Impulse);
 
-            Debug.Log("Shoot");
-            return true;
-
-        }//Closes Shoot method
-
+        }//CLoses LaunchProjectile ethod
 
     }//Closes GrenadeLauncher class
 }//Closes Namespace declaration

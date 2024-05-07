@@ -13,16 +13,23 @@ namespace Payosky.TechnicalTests.LifeIsTheGame
         private Rigidbody rb;
         private bool isHovered;
         private float currentRate;
+        private readonly Queue<Projectile> magazine = new();
 
         [SerializeField] protected WeaponData data;
+        [SerializeField] protected Transform nozzleTransform;
+
+        [SerializeField] protected UnityEvent OnShoot;
+
+        [Space(10)]
+        [Header("Interactable Fields")]
         [SerializeField] protected string interactableText = "Grab Weapon";
         [SerializeField] protected KeyCode interactableKey = KeyCode.E;
         [SerializeField] protected float minDistancePickUp = 3;
-        [SerializeField] protected UnityEvent OnShoot;
 
         protected virtual void Awake()
         {
             TryGetComponent(out rb);
+            LoadBulletsPool();
 
         }//Closes Awake method
 
@@ -114,8 +121,37 @@ namespace Payosky.TechnicalTests.LifeIsTheGame
 
             currentRate = data.cooldown;
             OnShoot.Invoke();
+
+            Projectile bullet = magazine.Dequeue();
+            magazine.Enqueue(bullet);
+            LaunchProjectile(bullet);
+
             return true;
         }//Closes Shoot method
+
+
+        protected virtual void LaunchProjectile(Projectile bullet)
+        {
+            if (!bullet) return;
+            bullet.Rigidbody.velocity = Vector3.zero;
+            bullet.transform.SetPositionAndRotation(nozzleTransform.position, nozzleTransform.rotation);
+            bullet.gameObject.SetActive(true);
+            bullet.Rigidbody.AddForce(nozzleTransform.forward * data.firePower, ForceMode.Impulse);
+
+        }//CLoses LaunchProjectile ethod
+
+        public void LoadBulletsPool()
+        {
+            if (!data || !data.bullet || !nozzleTransform) return;
+
+            for (int i = 0; i < data.magazineSize; i++)
+            {
+                Projectile bullet = Instantiate(data.bullet, nozzleTransform.position, transform.rotation);
+                bullet.gameObject.SetActive(false);
+                magazine.Enqueue(bullet);
+            }
+
+        }//Closes LoadBulletsPool method
 
     }//Closes Weapon method
 }//Closes Namespace declaration

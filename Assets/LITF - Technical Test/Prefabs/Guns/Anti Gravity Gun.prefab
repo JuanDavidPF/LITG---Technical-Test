@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 9140331993715313263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.27976626, w: 0.96006817}
-  m_LocalPosition: {x: 0.008, y: 0.343, z: 0.744}
+  m_LocalPosition: {x: 0.02, y: 0.51, z: 0.813}
   m_LocalScale: {x: 2.3809524, y: 2.3809524, z: 2.3809524}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5052,6 +5052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec34d8081ec593348a4e263888f5ea91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nozzleTransform: {fileID: 3240536251846561711}
   data: {fileID: 11400000, guid: 2aa78537fbb39244b92b04626773bc19, type: 2}
   interactableText: Grab Anti Gravity Gun
   interactableKey: 101

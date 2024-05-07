@@ -24,7 +24,7 @@ namespace Payosky.TechnicalTests.LifeIsTheGame
 
         public int magazineSize = 24;
 
-        public GameObject bullet;
+        public Projectile bullet;
 
     }//Closes WeaponData class
 }//Closes namespace delaration

@@ -5052,6 +5052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1af757bcf60eb74a8ccfdf40bac6bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nozzleTransform: {fileID: 1893438935836110537}
   data: {fileID: 11400000, guid: 68d56fbaccc7fd54383bb03a71b82ee3, type: 2}
   interactableText: Grab Black Hole Gun
   interactableKey: 101
